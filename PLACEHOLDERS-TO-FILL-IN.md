@@ -1,36 +1,28 @@
-# Everything Still Marked "Placeholder" — Checklist
+# Checklist: what still needs real info
 
-Go through this list whenever you have the real info. Send it to Claude and it'll drop each one into the right file for you — you don't have to edit the code yourself unless you want to.
+Send any of these to Claude and it will update the files for you.
 
-## Social Media Links (in index.html and contact.html)
-- [ ] Facebook page link
+## Links
+- [ ] Facebook link
 - [ ] Instagram link
 - [ ] TikTok link
 - [ ] YouTube channel link
+- [ ] One YouTube video link for the homepage
 
-## YouTube Video (in index.html)
-- [ ] One video link to embed on the homepage (an existing video is fine)
+## Accounts
+- [ ] Snipcart public API key (snipcart.com, connect Stripe or PayPal first)
+- [ ] Formspree form ID (formspree.io, free) for the contact and appointment forms
 
-## Snipcart (shopping cart / checkout)
-- [ ] Sign up at snipcart.com
-- [ ] Connect Stripe or PayPal inside Snipcart
-- [ ] Copy your **public** API key from Snipcart's dashboard
-- [ ] Send it to Claude to paste into all 4 pages (index.html, shop.html, about.html, contact.html — it's the same key in each)
+## Store details
+- [ ] Store hours
+- [ ] Return / exchange policy
+- [ ] Shipping details (confirm the FAQ answers on the contact page)
+- [ ] 3 real customer reviews (from Facebook or Google)
+- [ ] Mahwish reviews the "Our Story" text
 
-## Formspree (contact form on contact.html)
-- [ ] Sign up at formspree.io
-- [ ] Create one form, copy the endpoint link (looks like formspree.io/f/abc1234)
-- [ ] Send it to Claude to paste into contact.html
-
-## Store Hours (contact.html)
-- [ ] Actual hours of operation
-
-## Products (shop.html)
-- [ ] Real photos for each of the 28 items currently on the page (clothing + jewelry)
-- [ ] Confirm or correct the 28 placeholder product names/prices — swap out any she doesn't actually carry, add ones she does
-- [ ] Add more products beyond the starting 28, using the copy-paste template in PRODUCT-TEMPLATE.txt
-
-## Photos (index.html, about.html)
-- [ ] A photo of the store front or interior (homepage)
-- [ ] A photo of Mahwish or the team (about page)
-- [ ] A photo of tailoring/fitting in progress (about page)
+## Photos
+- [ ] Hero / featured bridal photo (homepage)
+- [ ] 4 collection photos (everyday, formal, bridal, jewelry)
+- [ ] Photo of Mahwish or the store
+- [ ] Bridal appointment and tailoring photos
+- [ ] Product photos for all 28 items (and confirm names/prices)

@@ -3,561 +3,673 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shop | My Wish by Mahwish Rabbani</title>
-<meta name="description" content="Browse Pakistani lawn, chiffon, bridal wear and jewelry from My Wish by Mahwish Rabbani, Hicksville NY.">
-
+<title>Shop | My Wish Couture</title>
+<meta name="description" content="Shop Pakistani lawn, formal, bridal wear and jewelry from My Wish Couture in Hicksville, NY.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Snipcart shopping cart styles -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css">
 </head>
 <body>
 
+<div class="announce">New Eid &amp; wedding season pieces arriving from Pakistan. <a href="tel:5166055999">Call (516) 605-5999</a> to ask what's in store.</div>
 <header class="site-header">
-  <div class="nav-wrap">
-    <div class="brand">My Wish<span>by Mahwish Rabbani</span></div>
-    <nav class="main-nav">
+  <div class="nav">
+    <a href="index.html" class="brand">My Wish Couture<small>by Mahwish Rabbani</small></a>
+    <nav class="menu" id="menu">
       <a href="index.html">Home</a>
       <a href="shop.html" class="active">Shop</a>
+      <a href="services.html">Bridal &amp; Tailoring</a>
       <a href="about.html">Our Story</a>
       <a href="contact.html">Visit &amp; Contact</a>
     </nav>
-    <div class="nav-cart">
-      <a href="#" class="snipcart-checkout">Cart (<span class="snipcart-items-count">0</span>)</a>
+    <div class="nav-right">
+      <a href="#" class="snipcart-checkout cart-link">Bag (<span class="snipcart-items-count">0</span>)</a>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
     </div>
   </div>
 </header>
 
-<section class="tight">
-  <div class="section-head">
-    <h1>Shop the Collection</h1>
-    <p>Every piece is imported from Pakistan. Photos and final pricing are being finished — call or text (516) 605-5999 with any questions on sizing or availability while we update this page.</p>
-  </div>
+<section class="page-hero">
+  <h1>Shop the Collection</h1>
+  <p>Imported from Pakistan and hand-selected for our Hicksville store. Need a size, color or custom fit? Call or WhatsApp (516) 605-5999.</p>
+</section>
+<section style="padding-top:3rem">
+  <div class="wrap">
+    <div class="notice"><p>This is a preview selection. Photos and final prices are being added. Everything shown can also be ordered by phone, WhatsApp or in store, and tailoring is available on all clothing.</p></div>
+    <div class="filter"><a href="#everyday">Everyday &amp; Lawn</a><a href="#formal">Party &amp; Formal</a><a href="#bridal">Bridal</a><a href="#jewelry">Jewelry</a></div>
+    <!-- ============================================================
+         TO ADD A PRODUCT: copy everything from one "PRODUCT START"
+         comment to its "PRODUCT END" comment, paste it inside the
+         right category, then change the name, note, price (in BOTH
+         places) and give data-item-id a new unique name.
+         See PRODUCT-TEMPLATE.txt for full instructions.
+         ============================================================ -->
 
-  <div class="order-banner">
-    <p>Prices below are placeholders while we finish photographing the current collection. In-store try-ons and tailoring are always available.</p>
-  </div>
-
-  <!-- ============================================================
-       HOW TO ADD A NEW PRODUCT
-       1. Copy one whole "product-card" block below (from
-          <div class="product-card"> to its closing </div>).
-       2. Paste it right after the last item in the right section.
-       3. Change the fabric note, name, and PHOTO TEXT.
-       4. Change data-item-id to something new and unique.
-       5. Price shown on the page (in the "price" line) and the
-          data-item-price on the button must match.
-       6. Prices/inventory can also be managed later from your
-          Snipcart dashboard without touching this code.
-       ============================================================ -->
-
-  <h2 class="category-label">Everyday &amp; Casual</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Spring Lawn Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Printed Cambric · 3-Piece Lawn Suit</div>
-        <h4>Spring Lawn Suit</h4>
+  <div class="cat-title" id="everyday"><h2>Everyday &amp; Lawn</h2><span>Lawn, cambric and straight-cut suits</span></div>
+  <div class="grid">
+    <!-- PRODUCT START: Spring Lawn 3-Piece -->
+    <div class="card">
+      <div class="ph">Spring Lawn 3-Piece<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">New</span><div class="note">Printed Lawn, 3-Piece</div>
+        <h4>Spring Lawn 3-Piece</h4>
         <div class="price">$65.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="lawn-spring-01"
+          data-item-id="spring-lawn-3-piece"
+          data-item-name="Spring Lawn 3-Piece"
           data-item-price="65.00"
           data-item-url="/shop.html"
-          data-item-description="Printed cambric, 3-piece lawn suit"
-          data-item-name="Spring Lawn Suit">
-          Add to Cart
+          data-item-description="Printed Lawn, 3-Piece"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Turquoise Lawn 2-Piece — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Printed Cambric · 2-Piece</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Turquoise Lawn 2-Piece -->
+    <div class="card">
+      <div class="ph">Turquoise Lawn 2-Piece<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Printed Cambric, 2-Piece</div>
         <h4>Turquoise Lawn 2-Piece</h4>
         <div class="price">$55.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="lawn-turquoise-02"
+          data-item-id="turquoise-lawn-2-piece"
+          data-item-name="Turquoise Lawn 2-Piece"
           data-item-price="55.00"
           data-item-url="/shop.html"
-          data-item-description="Printed cambric, 2-piece lawn suit"
-          data-item-name="Turquoise Lawn 2-Piece">
-          Add to Cart
+          data-item-description="Printed Cambric, 2-Piece"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Navy Angrakha Kurta Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Cotton · Resham Embroidery</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Navy Angrakha Kurta Set -->
+    <div class="card">
+      <div class="ph">Navy Angrakha Kurta Set<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Cotton, Resham Embroidery</div>
         <h4>Navy Angrakha Kurta Set</h4>
         <div class="price">$95.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="angrakha-navy-03"
+          data-item-id="navy-angrakha-kurta-set"
+          data-item-name="Navy Angrakha Kurta Set"
           data-item-price="95.00"
           data-item-url="/shop.html"
-          data-item-description="Cotton angrakha kurta set, resham embroidery"
-          data-item-name="Navy Angrakha Kurta Set">
-          Add to Cart
+          data-item-description="Cotton, Resham Embroidery"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Black Straight-Cut Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Crepe · Cigarette Pants</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Black Straight-Cut Suit -->
+    <div class="card">
+      <div class="ph">Black Straight-Cut Suit<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Crepe, Cigarette Pants</div>
         <h4>Black Straight-Cut Suit</h4>
         <div class="price">$80.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="straight-black-04"
+          data-item-id="black-straight-cut-suit"
+          data-item-name="Black Straight-Cut Suit"
           data-item-price="80.00"
           data-item-url="/shop.html"
-          data-item-description="Crepe straight-cut suit with cigarette pants"
-          data-item-name="Black Straight-Cut Suit">
-          Add to Cart
+          data-item-description="Crepe, Cigarette Pants"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Peach Straight Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Georgette · Resham Border</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Peach Straight Suit -->
+    <div class="card">
+      <div class="ph">Peach Straight Suit<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Georgette, Resham Border</div>
         <h4>Peach Straight Suit</h4>
         <div class="price">$120.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="straight-peach-05"
+          data-item-id="peach-straight-suit"
+          data-item-name="Peach Straight Suit"
           data-item-price="120.00"
           data-item-url="/shop.html"
-          data-item-description="Georgette straight suit with resham border"
-          data-item-name="Peach Straight Suit">
-          Add to Cart
+          data-item-description="Georgette, Resham Border"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Eid Collection 3-Piece — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Lawn &amp; Chiffon · Festive Embroidery</div>
-        <h4>Eid Collection 3-Piece</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Eid Festive 3-Piece -->
+    <div class="card">
+      <div class="ph">Eid Festive 3-Piece<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">Eid</span><div class="note">Lawn &amp; Chiffon Dupatta</div>
+        <h4>Eid Festive 3-Piece</h4>
         <div class="price">$135.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="eid-3pc-06"
+          data-item-id="eid-festive-3-piece"
+          data-item-name="Eid Festive 3-Piece"
           data-item-price="135.00"
           data-item-url="/shop.html"
-          data-item-description="Lawn and chiffon 3-piece, festive embroidery"
-          data-item-name="Eid Collection 3-Piece">
-          Add to Cart
+          data-item-description="Lawn & Chiffon Dupatta"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
+    <!-- PRODUCT END -->
   </div>
 
-  <h2 class="category-label">Party &amp; Formal</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Emerald Embroidered Shalwar Kameez — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Chiffon · Zari Embroidery</div>
+  <div class="cat-title" id="formal"><h2>Party &amp; Formal</h2><span>Chiffon, organza, anarkali, saree and kaftan</span></div>
+  <div class="grid">
+    <!-- PRODUCT START: Emerald Shalwar Kameez -->
+    <div class="card">
+      <div class="ph">Emerald Shalwar Kameez<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Chiffon, Zari Embroidery</div>
         <h4>Emerald Shalwar Kameez</h4>
         <div class="price">$145.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="shalwar-emerald-07"
+          data-item-id="emerald-shalwar-kameez"
+          data-item-name="Emerald Shalwar Kameez"
           data-item-price="145.00"
           data-item-url="/shop.html"
-          data-item-description="Chiffon 3-piece shalwar kameez, zari embroidery"
-          data-item-name="Emerald Shalwar Kameez">
-          Add to Cart
+          data-item-description="Chiffon, Zari Embroidery"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Rose Organza Formal Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Organza · Sequin &amp; Threadwork</div>
-        <h4>Rose Organza Formal Suit</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Rose Organza Formal -->
+    <div class="card">
+      <div class="ph">Rose Organza Formal<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">New</span><div class="note">Organza, Sequin &amp; Threadwork</div>
+        <h4>Rose Organza Formal</h4>
         <div class="price">$185.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="organza-rose-08"
+          data-item-id="rose-organza-formal"
+          data-item-name="Rose Organza Formal"
           data-item-price="185.00"
           data-item-url="/shop.html"
-          data-item-description="Organza formal suit, sequin and threadwork"
-          data-item-name="Rose Organza Formal Suit">
-          Add to Cart
+          data-item-description="Organza, Sequin & Threadwork"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Golden Anarkali Gown — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Net · Gota Work</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Golden Anarkali Gown -->
+    <div class="card">
+      <div class="ph">Golden Anarkali Gown<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Net, Gota Work</div>
         <h4>Golden Anarkali Gown</h4>
         <div class="price">$220.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="anarkali-gold-09"
+          data-item-id="golden-anarkali-gown"
+          data-item-name="Golden Anarkali Gown"
           data-item-price="220.00"
           data-item-url="/shop.html"
-          data-item-description="Net anarkali gown, gota work"
-          data-item-name="Golden Anarkali Gown">
-          Add to Cart
+          data-item-description="Net, Gota Work"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Coral Peplum Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Chiffon · Sharara Pants</div>
-        <h4>Coral Peplum Suit</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Coral Peplum with Sharara -->
+    <div class="card">
+      <div class="ph">Coral Peplum with Sharara<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Chiffon, Sharara Pants</div>
+        <h4>Coral Peplum with Sharara</h4>
         <div class="price">$150.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="peplum-coral-10"
+          data-item-id="coral-peplum-with-sharara"
+          data-item-name="Coral Peplum with Sharara"
           data-item-price="150.00"
           data-item-url="/shop.html"
-          data-item-description="Chiffon peplum suit with sharara pants"
-          data-item-name="Coral Peplum Suit">
-          Add to Cart
+          data-item-description="Chiffon, Sharara Pants"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Sapphire Chiffon Saree — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Chiffon · Embellished Border</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Sapphire Chiffon Saree -->
+    <div class="card">
+      <div class="ph">Sapphire Chiffon Saree<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Chiffon, Embellished Border</div>
         <h4>Sapphire Chiffon Saree</h4>
         <div class="price">$175.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="saree-sapphire-11"
+          data-item-id="sapphire-chiffon-saree"
+          data-item-name="Sapphire Chiffon Saree"
           data-item-price="175.00"
           data-item-url="/shop.html"
-          data-item-description="Chiffon saree, embellished sequin border"
-          data-item-name="Sapphire Chiffon Saree">
-          Add to Cart
+          data-item-description="Chiffon, Embellished Border"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Mint Kaftan Dress — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Georgette · Tilla Embroidery</div>
-        <h4>Mint Kaftan Dress</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Mint Kaftan -->
+    <div class="card">
+      <div class="ph">Mint Kaftan<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Georgette, Tilla Embroidery</div>
+        <h4>Mint Kaftan</h4>
         <div class="price">$110.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="kaftan-mint-12"
+          data-item-id="mint-kaftan"
+          data-item-name="Mint Kaftan"
           data-item-price="110.00"
           data-item-url="/shop.html"
-          data-item-description="Georgette kaftan, tilla embroidery"
-          data-item-name="Mint Kaftan Dress">
-          Add to Cart
+          data-item-description="Georgette, Tilla Embroidery"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Dusty Pink Chiffon Suit — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Organza Dupatta · Mirror Work</div>
-        <h4>Dusty Pink Chiffon Suit</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Dusty Pink Mirror Work Suit -->
+    <div class="card">
+      <div class="ph">Dusty Pink Mirror Work Suit<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Chiffon, Mirror Work</div>
+        <h4>Dusty Pink Mirror Work Suit</h4>
         <div class="price">$195.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="chiffon-dustypink-13"
+          data-item-id="dusty-pink-mirror-work-suit"
+          data-item-name="Dusty Pink Mirror Work Suit"
           data-item-price="195.00"
           data-item-url="/shop.html"
-          data-item-description="Chiffon suit with organza dupatta, mirror work"
-          data-item-name="Dusty Pink Chiffon Suit">
-          Add to Cart
+          data-item-description="Chiffon, Mirror Work"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Gold Party Anarkali — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Net · Sequin Cutwork</div>
-        <h4>Gold Party Anarkali</h4>
-        <div class="price">$240.00</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Designer Branded Suit -->
+    <div class="card">
+      <div class="ph">Designer Branded Suit<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">Designer</span><div class="note">Branded Pakistani Designer</div>
+        <h4>Designer Branded Suit</h4>
+        <div class="price">$260.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="anarkali-partygold-14"
-          data-item-price="240.00"
+          data-item-id="designer-branded-suit"
+          data-item-name="Designer Branded Suit"
+          data-item-price="260.00"
           data-item-url="/shop.html"
-          data-item-description="Net anarkali, sequin cutwork"
-          data-item-name="Gold Party Anarkali">
-          Add to Cart
+          data-item-description="Branded Pakistani Designer"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
+    <!-- PRODUCT END -->
   </div>
 
-  <h2 class="category-label">Bridal Collection</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Ivory Bridal Sharara Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Dabka &amp; Pearl Work</div>
-        <h4>Ivory Bridal Sharara Set</h4>
+  <div class="cat-title" id="bridal"><h2>Bridal</h2><span>Lehenga, sharara, gharara, peshwas and bridal jora</span></div>
+  <div class="grid">
+    <!-- PRODUCT START: Ivory Bridal Sharara -->
+    <div class="card">
+      <div class="ph">Ivory Bridal Sharara<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Dabka &amp; Pearl Work</div>
+        <h4>Ivory Bridal Sharara</h4>
         <div class="price">$650.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="sharara-ivorybridal-15"
+          data-item-id="ivory-bridal-sharara"
+          data-item-name="Ivory Bridal Sharara"
           data-item-price="650.00"
           data-item-url="/shop.html"
-          data-item-description="Bridal sharara set, dabka and pearl work"
-          data-item-name="Ivory Bridal Sharara Set">
-          Add to Cart
+          data-item-description="Dabka & Pearl Work"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Maroon Gharara Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Silk · Zardozi Work</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Maroon Gharara Set -->
+    <div class="card">
+      <div class="ph">Maroon Gharara Set<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Silk, Zardozi Work</div>
         <h4>Maroon Gharara Set</h4>
         <div class="price">$310.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="gharara-maroon-16"
+          data-item-id="maroon-gharara-set"
+          data-item-name="Maroon Gharara Set"
           data-item-price="310.00"
           data-item-url="/shop.html"
-          data-item-description="Silk gharara set, zardozi work"
-          data-item-name="Maroon Gharara Set">
-          Add to Cart
+          data-item-description="Silk, Zardozi Work"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Blush Bridal Lehenga Choli — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Net &amp; Silk · Stonework</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Blush Bridal Lehenga Choli -->
+    <div class="card">
+      <div class="ph">Blush Bridal Lehenga Choli<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">Bridal</span><div class="note">Net &amp; Silk, Stonework</div>
         <h4>Blush Bridal Lehenga Choli</h4>
         <div class="price">$780.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="lehenga-blush-17"
+          data-item-id="blush-bridal-lehenga-choli"
+          data-item-name="Blush Bridal Lehenga Choli"
           data-item-price="780.00"
           data-item-url="/shop.html"
-          data-item-description="Bridal lehenga choli, net and silk, stonework"
-          data-item-name="Blush Bridal Lehenga Choli">
-          Add to Cart
+          data-item-description="Net & Silk, Stonework"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Champagne Peshwas Gown — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Organza · Mukesh Embroidery</div>
-        <h4>Champagne Peshwas Gown</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Champagne Peshwas -->
+    <div class="card">
+      <div class="ph">Champagne Peshwas<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Organza, Mukesh Embroidery</div>
+        <h4>Champagne Peshwas</h4>
         <div class="price">$340.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="peshwas-champagne-18"
+          data-item-id="champagne-peshwas"
+          data-item-name="Champagne Peshwas"
           data-item-price="340.00"
           data-item-url="/shop.html"
-          data-item-description="Peshwas gown, organza, mukesh embroidery"
-          data-item-name="Champagne Peshwas Gown">
-          Add to Cart
+          data-item-description="Organza, Mukesh Embroidery"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Burgundy Sharara Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Velvet · Dabka Embroidery</div>
-        <h4>Burgundy Sharara Set</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Burgundy Velvet Sharara -->
+    <div class="card">
+      <div class="ph">Burgundy Velvet Sharara<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Velvet, Dabka Embroidery</div>
+        <h4>Burgundy Velvet Sharara</h4>
         <div class="price">$265.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="sharara-burgundy-19"
+          data-item-id="burgundy-velvet-sharara"
+          data-item-name="Burgundy Velvet Sharara"
           data-item-price="265.00"
           data-item-url="/shop.html"
-          data-item-description="Velvet sharara set, dabka embroidery"
-          data-item-name="Burgundy Sharara Set">
-          Add to Cart
+          data-item-description="Velvet, Dabka Embroidery"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Wine Bridal Jora — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Full Bridal Set · Gold Zardozi &amp; Stones</div>
-        <h4>Wine Bridal Jora</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Red Bridal Jora -->
+    <div class="card">
+      <div class="ph">Red Bridal Jora<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">Bridal</span><div class="note">Gold Zardozi &amp; Stones</div>
+        <h4>Red Bridal Jora</h4>
         <div class="price">$950.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="bridaljora-wine-20"
+          data-item-id="red-bridal-jora"
+          data-item-name="Red Bridal Jora"
           data-item-price="950.00"
           data-item-url="/shop.html"
-          data-item-description="Full bridal jora, gold zardozi and stonework"
-          data-item-name="Wine Bridal Jora">
-          Add to Cart
+          data-item-description="Gold Zardozi & Stones"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="XS|S|M|L|XL|XXL|Custom (we'll contact you)">
+          Add to Bag
         </button>
       </div>
     </div>
-
+    <!-- PRODUCT END -->
   </div>
 
-  <h2 class="category-label">Jewelry</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Kundan Choker Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Gold-Tone · Kundan &amp; Pearl</div>
+  <div class="cat-title" id="jewelry"><h2>Jewelry</h2><span>Pieces to complete the look</span></div>
+  <div class="grid">
+    <!-- PRODUCT START: Kundan Choker Set -->
+    <div class="card">
+      <div class="ph">Kundan Choker Set<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Gold Tone, Kundan &amp; Pearl</div>
         <h4>Kundan Choker Set</h4>
         <div class="price">$85.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-kundanchoker-21"
+          data-item-id="kundan-choker-set"
+          data-item-name="Kundan Choker Set"
           data-item-price="85.00"
           data-item-url="/shop.html"
-          data-item-description="Gold-tone kundan and pearl choker set"
-          data-item-name="Kundan Choker Set">
-          Add to Cart
+          data-item-description="Gold Tone, Kundan & Pearl">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Jhumka Earrings — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Antique Gold · Meenakari</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Jhumka Earrings -->
+    <div class="card">
+      <div class="ph">Jhumka Earrings<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Antique Gold, Meenakari</div>
         <h4>Jhumka Earrings</h4>
         <div class="price">$35.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-jhumka-22"
+          data-item-id="jhumka-earrings"
+          data-item-name="Jhumka Earrings"
           data-item-price="35.00"
           data-item-url="/shop.html"
-          data-item-description="Antique gold jhumka earrings, meenakari work"
-          data-item-name="Jhumka Earrings">
-          Add to Cart
+          data-item-description="Antique Gold, Meenakari">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Maang Tikka — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Gold-Tone · Kundan Stone</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Maang Tikka -->
+    <div class="card">
+      <div class="ph">Maang Tikka<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Gold Tone, Kundan</div>
         <h4>Maang Tikka</h4>
         <div class="price">$28.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-maangtikka-23"
+          data-item-id="maang-tikka"
+          data-item-name="Maang Tikka"
           data-item-price="28.00"
           data-item-url="/shop.html"
-          data-item-description="Gold-tone maang tikka with kundan stone"
-          data-item-name="Maang Tikka">
-          Add to Cart
+          data-item-description="Gold Tone, Kundan">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Bridal Necklace Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Heavy Kundan &amp; Polki</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Bridal Necklace Set -->
+    <div class="card">
+      <div class="ph">Bridal Necklace Set<br>photo coming soon</div>
+      <div class="info">
+        <span class="tag">Bridal</span><div class="note">Heavy Kundan &amp; Polki</div>
         <h4>Bridal Necklace Set</h4>
         <div class="price">$220.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-bridalnecklace-24"
+          data-item-id="bridal-necklace-set"
+          data-item-name="Bridal Necklace Set"
           data-item-price="220.00"
           data-item-url="/shop.html"
-          data-item-description="Heavy bridal necklace set, kundan and polki"
-          data-item-name="Bridal Necklace Set">
-          Add to Cart
+          data-item-description="Heavy Kundan & Polki">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Gold Bangle Set (6 pcs) — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Antique Finish</div>
-        <h4>Gold Bangle Set (6 pcs)</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Bangle Set of 6 -->
+    <div class="card">
+      <div class="ph">Bangle Set of 6<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Antique Finish</div>
+        <h4>Bangle Set of 6</h4>
         <div class="price">$45.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-bangles-25"
+          data-item-id="bangle-set-of-6"
+          data-item-name="Bangle Set of 6"
           data-item-price="45.00"
           data-item-url="/shop.html"
-          data-item-description="Antique finish gold bangle set, 6 pieces"
-          data-item-name="Gold Bangle Set (6 pcs)">
-          Add to Cart
+          data-item-description="Antique Finish">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Pearl Drop Earrings — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Everyday Wear</div>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Pearl Drop Earrings -->
+    <div class="card">
+      <div class="ph">Pearl Drop Earrings<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Everyday Wear</div>
         <h4>Pearl Drop Earrings</h4>
         <div class="price">$22.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-pearldrop-26"
+          data-item-id="pearl-drop-earrings"
+          data-item-name="Pearl Drop Earrings"
           data-item-price="22.00"
           data-item-url="/shop.html"
-          data-item-description="Simple pearl drop earrings"
-          data-item-name="Pearl Drop Earrings">
-          Add to Cart
+          data-item-description="Everyday Wear">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Layered Jhumar Set — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Statement Bridal Piece</div>
-        <h4>Layered Jhumar Set</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Jhumar Headpiece -->
+    <div class="card">
+      <div class="ph">Jhumar Headpiece<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Bridal Statement</div>
+        <h4>Jhumar Headpiece</h4>
         <div class="price">$150.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-jhumar-27"
+          data-item-id="jhumar-headpiece"
+          data-item-name="Jhumar Headpiece"
           data-item-price="150.00"
           data-item-url="/shop.html"
-          data-item-description="Layered bridal jhumar statement set"
-          data-item-name="Layered Jhumar Set">
-          Add to Cart
+          data-item-description="Bridal Statement">
+          Add to Bag
         </button>
       </div>
     </div>
-
-    <div class="product-card">
-      <div class="photo-placeholder"><span>Nath (Nose Ring) — photo coming soon</span></div>
-      <div class="product-info">
-        <div class="fabric-note">Traditional Gold-Tone</div>
-        <h4>Nath (Nose Ring)</h4>
+    <!-- PRODUCT END -->
+    <!-- PRODUCT START: Nath Nose Ring -->
+    <div class="card">
+      <div class="ph">Nath Nose Ring<br>photo coming soon</div>
+      <div class="info">
+        <div class="note">Traditional Gold Tone</div>
+        <h4>Nath Nose Ring</h4>
         <div class="price">$18.00</div>
         <button class="snipcart-add-item btn btn-primary"
-          data-item-id="jewelry-nath-28"
+          data-item-id="nath-nose-ring"
+          data-item-name="Nath Nose Ring"
           data-item-price="18.00"
           data-item-url="/shop.html"
-          data-item-description="Traditional gold-tone nath nose ring"
-          data-item-name="Nath (Nose Ring)">
-          Add to Cart
+          data-item-description="Traditional Gold Tone">
+          Add to Bag
         </button>
       </div>
     </div>
-
+    <!-- PRODUCT END -->
   </div>
 
+  </div>
+</section>
+<section class="alt cta">
+  <div class="wrap">
+    <h2>Don't see what you're looking for?</h2>
+    <p>Only part of our collection is online. Call, text or WhatsApp and we'll tell you what's in store, or send photos.</p>
+    <div class="hero-actions"><a href="tel:5166055999" class="btn btn-primary">Call (516) 605-5999</a><a href="https://wa.me/15166055999" class="btn btn-wa" target="_blank" rel="noopener">WhatsApp Us</a></div>
+  </div>
 </section>
 
-<footer class="site-footer">
-  <div class="foot-brand">My Wish by Mahwish Rabbani</div>
-  <p>420 S Broadway, Hicksville, NY 11801 · (516) 605-5999</p>
-  <p><a href="mailto:mywish7866@yahoo.com">mywish7866@yahoo.com</a></p>
-  <div class="foot-note">&copy; 2026 My Wish by Mahwish Rabbani. All rights reserved.</div>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem">My Wish Couture<small>by Mahwish Rabbani</small></div>
+        <p>Bridal, party and casual Pakistani clothing, designer suits, jewelry and tailoring. Family owned and serving Long Island for over 20 years.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html#everyday">Everyday &amp; Lawn</a></li>
+          <li><a href="shop.html#formal">Party &amp; Formal</a></li>
+          <li><a href="shop.html#bridal">Bridal</a></li>
+          <li><a href="shop.html#jewelry">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Store</h4>
+        <ul>
+          <li><a href="services.html">Bridal &amp; Tailoring</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Visit &amp; Contact</a></li>
+          <li><a href="contact.html#faq">Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>420 S Broadway, Hicksville, NY 11801</li>
+          <li><a href="tel:5166055999">(516) 605-5999</a></li>
+          <li><a href="mailto:mywish7866@yahoo.com">mywish7866@yahoo.com</a></li>
+          <li><a href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social" style="margin-top:2rem">
+    <!-- SOCIAL LINKS: replace each PASTE-...-HERE with the real link -->
+    <a href="PASTE-FACEBOOK-LINK-HERE" target="_blank" rel="noopener">Facebook</a>
+    <a href="PASTE-INSTAGRAM-LINK-HERE" target="_blank" rel="noopener">Instagram</a>
+    <a href="PASTE-TIKTOK-LINK-HERE" target="_blank" rel="noopener">TikTok</a>
+    <a href="PASTE-YOUTUBE-LINK-HERE" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <div class="foot-bottom">&copy; 2026 My Wish Couture by Mahwish Rabbani. All rights reserved.</div>
+  </div>
 </footer>
 
+<a class="wa-float" href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp</a>
+
+<!-- SNIPCART: replace PASTE-YOUR-SNIPCART-PUBLIC-API-KEY-HERE with the public key from your Snipcart dashboard -->
 <div hidden id="snipcart" data-api-key="PASTE-YOUR-SNIPCART-PUBLIC-API-KEY-HERE" data-config-modal-style="side"></div>
 <script async src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
-
 </body>
 </html>

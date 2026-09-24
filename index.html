@@ -3,117 +3,200 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Wish by Mahwish Rabbani | Pakistani Bridal, Party &amp; Casual Wear — Hicksville, NY</title>
-<meta name="description" content="Family-owned Pakistani clothing and jewelry boutique in Hicksville, NY. Bridal, party, and casual wear imported from Pakistan, plus tailoring. 20 years serving Long Island.">
-
+<title>My Wish Couture | Pakistani Bridal, Party &amp; Casual Wear in Hicksville, NY</title>
+<meta name="description" content="Family owned Pakistani clothing boutique in Hicksville, Long Island. Bridal, party and casual wear imported from Pakistan, designer suits, jewelry and tailoring.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-
-<!-- SNIPCART: paste your public API key below when ready -->
-<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Snipcart shopping cart styles -->
+<link rel="preconnect" href="https://app.snipcart.com">
+<link rel="preconnect" href="https://cdn.snipcart.com">
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css">
 </head>
 <body>
 
+<div class="announce">New Eid &amp; wedding season pieces arriving from Pakistan. <a href="tel:5166055999">Call (516) 605-5999</a> to ask what's in store.</div>
 <header class="site-header">
-  <div class="nav-wrap">
-    <div class="brand">My Wish<span>by Mahwish Rabbani</span></div>
-    <nav class="main-nav">
+  <div class="nav">
+    <a href="index.html" class="brand">My Wish Couture<small>by Mahwish Rabbani</small></a>
+    <nav class="menu" id="menu">
       <a href="index.html" class="active">Home</a>
       <a href="shop.html">Shop</a>
+      <a href="services.html">Bridal &amp; Tailoring</a>
       <a href="about.html">Our Story</a>
       <a href="contact.html">Visit &amp; Contact</a>
     </nav>
-    <div class="nav-cart">
-      <a href="#" class="snipcart-checkout">Cart (<span class="snipcart-items-count">0</span>)</a>
+    <div class="nav-right">
+      <a href="#" class="snipcart-checkout cart-link">Bag (<span class="snipcart-items-count">0</span>)</a>
+      <button class="menu-toggle" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">&#9776;</button>
     </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="eyebrow-line">Hicksville, New York · Est. two decades ago</div>
-  <h1>Pakistani bridal, party &amp; everyday wear, imported and tailored with care</h1>
-  <p class="lede">A family-run boutique bringing authentic shalwar kameez, lawn, chiffon formals, bridal sets, and jewelry from Pakistan straight to Long Island.</p>
-  <div class="hero-actions">
-    <a href="shop.html" class="btn btn-primary">Browse the Collection</a>
-    <a href="tel:5166055999" class="btn btn-outline">Call (516) 605-5999</a>
+<section class="hero" style="padding:0">
+  <div class="hero-inner">
+    <div>
+      <div class="kicker">Hicksville, Long Island &nbsp;|&nbsp; Over 20 years</div>
+      <h1>Pakistani couture for weddings, Eid and every day</h1>
+      <p class="lede">Bridal, party and casual wear imported directly from Pakistan, branded designer suits, jewelry to match, and in-house tailoring for the perfect fit.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-light" style="background:var(--gold-soft);color:var(--maroon-dark)">Shop the Collection</a>
+        <a href="contact.html" class="btn btn-light">Visit the Store</a>
+      </div>
+    </div>
+    <div class="hero-frame"><div class="ph">Featured bridal photo coming soon</div></div>
+  </div>
+</section>
+
+<div class="trust">
+  <ul>
+    <li><strong>20+ years</strong><span>Family owned on Long Island</span></li>
+    <li><strong>Imported</strong><span>Directly from Pakistan</span></li>
+    <li><strong>Tailoring</strong><span>Alterations in house</span></li>
+    <li><strong>23K+</strong><span>Followers on Facebook</span></li>
+  </ul>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <h2>Shop by collection</h2>
+      <p>A selection of what's in store right now. New pieces arrive regularly, so call or visit to see the full range.</p>
+    </div>
+    <div class="collections">
+      <a class="collection" href="shop.html#everyday"><div class="ph">Lawn &amp; casual photo</div><div class="body"><h3>Everyday &amp; Lawn</h3><p>Lawn, cambric and straight-cut suits for daily wear.</p><span class="more">Browse everyday</span></div></a>
+      <a class="collection" href="shop.html#formal"><div class="ph">Party wear photo</div><div class="body"><h3>Party &amp; Formal</h3><p>Chiffon, organza, anarkalis, sarees and kaftans.</p><span class="more">Browse formal</span></div></a>
+      <a class="collection" href="shop.html#bridal"><div class="ph">Bridal photo</div><div class="body"><h3>Bridal</h3><p>Lehenga, sharara, gharara, peshwas and bridal jora.</p><span class="more">Browse bridal</span></div></a>
+      <a class="collection" href="shop.html#jewelry"><div class="ph">Jewelry photo</div><div class="body"><h3>Jewelry</h3><p>Kundan sets, jhumkas, tikkas and bangles.</p><span class="more">Browse jewelry</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <div class="ph">Photo of Mahwish or the store</div>
+    <div>
+      <h2>A family boutique, not a warehouse</h2>
+      <p>For more than twenty years, Mahwish Rabbani has hand-selected every piece that comes into My Wish. When you call the store, you speak with the family that runs it.</p>
+      <p>Not sure about sizing, color or fabric? Come in, try it on, and we'll tailor it so it fits the way it should.</p>
+      <div class="hero-actions" style="margin-top:1.5rem">
+        <a href="about.html" class="btn btn-ghost">Our Story</a>
+        <a href="tel:5166055999" class="btn btn-primary">Call (516) 605-5999</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head"><h2>For every occasion</h2><p>Tell us the event and we'll help you put the look together.</p></div>
+    <div class="services">
+      <div class="service"><h3 style="color:#fff">Bridal &amp; Wedding</h3><p>Full bridal sets and wedding guest outfits, with zardozi, dabka, stones and pearl work. Book a private appointment.</p></div>
+      <div class="service"><h3 style="color:#fff">Eid &amp; Festive</h3><p>Seasonal collections for Eid and celebrations, in lawn, chiffon and embroidered formals.</p></div>
+      <div class="service"><h3 style="color:#fff">Tailoring</h3><p>Alterations and fitting in house, so your outfit is ready for the day, not just the hanger.</p></div>
+    </div>
+    <div class="center" style="margin-top:2.5rem"><a href="services.html" class="btn btn-light">Bridal &amp; Tailoring Details</a></div>
   </div>
 </section>
 
 <section>
-  <div class="section-head">
-    <h2>What we carry</h2>
-    <p>From everyday lawn suits to fully embellished bridal sets, every piece is imported directly from Pakistan.</p>
-  </div>
-  <div class="category-grid">
-    <div class="category-card">
-      <h3>Everyday &amp; Casual</h3>
-      <p>Lawn and cambric suits, straight-cut kurtas, and comfortable everyday pieces.</p>
-    </div>
-    <div class="category-card">
-      <h3>Party &amp; Formal</h3>
-      <p>Chiffon and organza formals, anarkalis, sarees, and eveningwear with fine embroidery.</p>
-    </div>
-    <div class="category-card">
-      <h3>Bridal Collection</h3>
-      <p>Sharara, gharara, lehenga choli, and full bridal jora sets with zardozi and stonework.</p>
-    </div>
-    <div class="category-card">
-      <h3>Jewelry</h3>
-      <p>Kundan sets, jhumka earrings, bangles, and bridal jewelry to complete the look.</p>
+  <div class="wrap">
+    <div class="head"><h2>How to order</h2><p>Shop online, or order the personal way. Either works.</p></div>
+    <div class="steps">
+      <div class="step"><h3>Browse</h3><p>Look through the collection online or follow us for new arrivals.</p></div>
+      <div class="step"><h3>Order your way</h3><p>Add pieces to your bag and check out, or call, text or WhatsApp us to order.</p></div>
+      <div class="step"><h3>Pick up or ship</h3><p>Collect from our Hicksville store, with tailoring if needed, or have it shipped.</p></div>
     </div>
   </div>
 </section>
 
-<section class="band-alt">
-  <div class="story-block">
-    <div class="story-photo-placeholder">
-      <span>Photo of the store or Mahwish coming soon</span>
-    </div>
-    <div>
-      <h2>Two decades of dressing Long Island's biggest occasions</h2>
-      <p>My Wish has been a family business from day one. We hand-select and import every piece from Pakistan, and we offer in-house tailoring so your outfit fits exactly right — for a wedding, an Eid celebration, or just because.</p>
-      <p>Prefer to see everything in person? Our store on South Broadway is open for browsing, trying pieces on, and getting fitted.</p>
-      <a href="about.html" class="btn btn-outline">Read Our Story</a>
+<section class="alt">
+  <div class="wrap">
+    <div class="head"><h2>See the collection in motion</h2><p>Recent arrivals and looks from the store.</p></div>
+    <div class="video">
+      <!-- YOUTUBE: replace VIDEO_ID_HERE with the video ID (the part after watch?v= in the YouTube link) -->
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="My Wish Couture collection video" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </section>
 
-<section class="tight">
-  <div class="section-head">
-    <h2>See us in motion</h2>
-    <p>A look at recent collections and pieces from our store.</p>
-  </div>
-  <div class="video-wrap">
-    <!-- PASTE YOUTUBE LINK HERE: replace VIDEO_ID_HERE below with the ID from her YouTube video link -->
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" title="My Wish by Mahwish Rabbani" allowfullscreen></iframe>
-  </div>
-</section>
-
-<section class="band-maroon tight">
-  <div class="section-head">
-    <h2 style="color:#fff;">Follow along</h2>
-    <p style="color:var(--gold-light);">New arrivals, Eid collections, and bridal looks are posted regularly.</p>
-  </div>
-  <div class="social-row">
-    <!-- PASTE SOCIAL LINKS HERE -->
-    <a href="https://facebook.com/PASTE-FACEBOOK-LINK-HERE" target="_blank" rel="noopener">Facebook</a>
-    <a href="https://instagram.com/PASTE-INSTAGRAM-LINK-HERE" target="_blank" rel="noopener">Instagram</a>
-    <a href="https://tiktok.com/@PASTE-TIKTOK-LINK-HERE" target="_blank" rel="noopener">TikTok</a>
-    <a href="https://youtube.com/@PASTE-YOUTUBE-LINK-HERE" target="_blank" rel="noopener">YouTube</a>
+<section>
+  <div class="wrap">
+    <div class="head"><h2>What customers say</h2></div>
+    <!-- TESTIMONIALS: replace with real reviews from Facebook/Google when ready -->
+    <div class="quotes">
+      <div class="quote"><p>Placeholder review. Replace with a real customer quote from Facebook or Google.</p><span>Customer name, Long Island</span></div>
+      <div class="quote"><p>Placeholder review. Replace with a real customer quote about bridal or tailoring.</p><span>Customer name, Queens</span></div>
+      <div class="quote"><p>Placeholder review. Replace with a real customer quote about Eid shopping.</p><span>Customer name, Nassau County</span></div>
+    </div>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="foot-brand">My Wish by Mahwish Rabbani</div>
-  <p>420 S Broadway, Hicksville, NY 11801 · (516) 605-5999</p>
-  <p><a href="mailto:mywish7866@yahoo.com">mywish7866@yahoo.com</a></p>
-  <div class="foot-note">&copy; 2026 My Wish by Mahwish Rabbani. All rights reserved.</div>
+<section class="dark cta">
+  <div class="wrap">
+    <h2>Follow for new arrivals</h2>
+    <p>New collections, Eid pieces and bridal looks are posted first on social media.</p>
+    <div class="social">
+    <!-- SOCIAL LINKS: replace each PASTE-...-HERE with the real link -->
+    <a href="PASTE-FACEBOOK-LINK-HERE" target="_blank" rel="noopener">Facebook</a>
+    <a href="PASTE-INSTAGRAM-LINK-HERE" target="_blank" rel="noopener">Instagram</a>
+    <a href="PASTE-TIKTOK-LINK-HERE" target="_blank" rel="noopener">TikTok</a>
+    <a href="PASTE-YOUTUBE-LINK-HERE" target="_blank" rel="noopener">YouTube</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="margin-bottom:1rem">My Wish Couture<small>by Mahwish Rabbani</small></div>
+        <p>Bridal, party and casual Pakistani clothing, designer suits, jewelry and tailoring. Family owned and serving Long Island for over 20 years.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html#everyday">Everyday &amp; Lawn</a></li>
+          <li><a href="shop.html#formal">Party &amp; Formal</a></li>
+          <li><a href="shop.html#bridal">Bridal</a></li>
+          <li><a href="shop.html#jewelry">Jewelry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Store</h4>
+        <ul>
+          <li><a href="services.html">Bridal &amp; Tailoring</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="contact.html">Visit &amp; Contact</a></li>
+          <li><a href="contact.html#faq">Questions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>420 S Broadway, Hicksville, NY 11801</li>
+          <li><a href="tel:5166055999">(516) 605-5999</a></li>
+          <li><a href="mailto:mywish7866@yahoo.com">mywish7866@yahoo.com</a></li>
+          <li><a href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="social" style="margin-top:2rem">
+    <!-- SOCIAL LINKS: replace each PASTE-...-HERE with the real link -->
+    <a href="PASTE-FACEBOOK-LINK-HERE" target="_blank" rel="noopener">Facebook</a>
+    <a href="PASTE-INSTAGRAM-LINK-HERE" target="_blank" rel="noopener">Instagram</a>
+    <a href="PASTE-TIKTOK-LINK-HERE" target="_blank" rel="noopener">TikTok</a>
+    <a href="PASTE-YOUTUBE-LINK-HERE" target="_blank" rel="noopener">YouTube</a>
+    </div>
+    <div class="foot-bottom">&copy; 2026 My Wish Couture by Mahwish Rabbani. All rights reserved.</div>
+  </div>
 </footer>
 
-<!-- SNIPCART: paste your public API key in data-api-key below -->
+<a class="wa-float" href="https://wa.me/15166055999" target="_blank" rel="noopener">WhatsApp</a>
+
+<!-- SNIPCART: replace PASTE-YOUR-SNIPCART-PUBLIC-API-KEY-HERE with the public key from your Snipcart dashboard -->
 <div hidden id="snipcart" data-api-key="PASTE-YOUR-SNIPCART-PUBLIC-API-KEY-HERE" data-config-modal-style="side"></div>
 <script async src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
-
 </body>
 </html>

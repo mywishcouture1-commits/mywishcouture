@@ -1,57 +1,37 @@
-HOW TO ADD A NEW PRODUCT TO THE SHOP PAGE
-===========================================
+ADDING OR CHANGING PRODUCTS — MY WISH COUTURE
+==============================================
 
-You don't need to know how to code. Just copy the block below, paste it
-into shop.html under the right category, and fill in the blanks.
+EASIEST WAY: paste this to Claude and fill in the blanks
 
-If you'd rather not touch the file yourself, copy this whole message and
-paste it to Claude:
-
-  "I need to add a new product to my clothing website. Here are the
-  details: [item name], [fabric/style note], [price], [category:
-  everyday/formal/bridal/jewelry]. Please give me the exact code block
-  to paste into shop.html, with a unique data-item-id."
+  "I'm updating my My Wish Couture website (shop.html).
+   I want to [add / change / remove] this product:
+   Name: ___  Fabric/style note: ___  Price: ___
+   Category: everyday / formal / bridal / jewelry
+   Photo file name (if any): ___
+   Give me the exact code and tell me where to paste it."
 
 
-THE TEMPLATE (copy everything between the lines):
----------------------------------------------------
-<div class="product-card">
-  <div class="photo-placeholder"><span>PRODUCT NAME — photo coming soon</span></div>
-  <div class="product-info">
-    <div class="fabric-note">FABRIC / STYLE NOTE HERE</div>
-    <h4>PRODUCT NAME HERE</h4>
-    <div class="price">$PRICE.00</div>
-    <button class="snipcart-add-item btn btn-primary"
-      data-item-id="unique-id-here"
-      data-item-price="PRICE.00"
-      data-item-url="/shop.html"
-      data-item-description="SHORT DESCRIPTION HERE"
-      data-item-name="PRODUCT NAME HERE">
-      Add to Cart
-    </button>
-  </div>
-</div>
----------------------------------------------------
+DOING IT YOURSELF
+In shop.html, every product sits between two comments:
+  <!-- PRODUCT START: name -->   ...   <!-- PRODUCT END -->
 
-RULES TO REMEMBER:
-1. The price in the "price" line and in data-item-price must match exactly.
-2. data-item-id must be different for every single product — never reuse one.
-3. Once a photo is ready, replace the whole <div class="photo-placeholder">...</div>
-   line with: <img src="images/products/your-photo-name.jpg" alt="Product Name">
-   (upload the photo into the images/products folder in GitHub first)
+To add one: copy one full block, paste it inside the right category,
+then change:
+  1. The name (in 3 spots: photo text, <h4>, data-item-name)
+  2. The fabric note (<div class="note"> and data-item-description)
+  3. The price (in 2 spots: <div class="price"> and data-item-price)
+  4. data-item-id to a brand new unique word, like red-lawn-suit-2
 
+To remove one: delete everything from its PRODUCT START to PRODUCT END.
 
-CHANGING A PRICE ON AN EXISTING PRODUCT
-===========================================
-Once Snipcart is set up, you have two options:
+ADDING A PHOTO
+1. Upload the photo to GitHub (Add file > Upload files). Keep the name
+   simple, no spaces, like red-lawn.jpg
+2. In that product, replace this line:
+     <div class="ph">... photo coming soon</div>
+   with:
+     <img src="red-lawn.jpg" alt="Red Lawn Suit">
 
-Option A (recommended): Log into your Snipcart dashboard, find the
-product, and update the price there. This updates what gets charged
-at checkout instantly — no code needed.
-
-Option B: You must ALSO update the price shown on the page itself in
-shop.html (both the visible "$XX.00" text and the data-item-price on
-the button) so the displayed price matches what Snipcart charges.
-Snipcart does not automatically change the price text on your page —
-only what happens at checkout. If the two don't match, customers will
-be confused, so always update both.
+CHANGING A PRICE
+Change it in BOTH spots in shop.html (the visible price and
+data-item-price). They must match or Snipcart will block the checkout.
